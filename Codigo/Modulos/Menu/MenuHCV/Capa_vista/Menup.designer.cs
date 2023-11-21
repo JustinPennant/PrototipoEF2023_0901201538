@@ -52,6 +52,7 @@ namespace MenuHCV
             // panelLogo
             // 
             this.panelLogo.Controls.Add(this.btnPrototipo);
+            this.panelLogo.Controls.Add(this.btnseguridad);
             this.panelLogo.Controls.Add(this.btnHoteleria);
             this.panelLogo.Controls.Add(this.btnNominas);
             this.panelLogo.Controls.Add(this.btnBancos);
@@ -145,13 +146,13 @@ namespace MenuHCV
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnInventario.Location = new System.Drawing.Point(-1, 203);
+            this.btnInventario.Location = new System.Drawing.Point(4, 410);
             this.btnInventario.Margin = new System.Windows.Forms.Padding(4);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
             this.btnInventario.Size = new System.Drawing.Size(315, 33);
             this.btnInventario.TabIndex = 15;
-            this.btnInventario.Text = "INVENTARIO";
+            this.btnInventario.Text = "PROTOTIPO";
             this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventario.UseVisualStyleBackColor = false;
             this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
@@ -242,7 +243,6 @@ namespace MenuHCV
             this.panelSideMenu.BackColor = System.Drawing.Color.DarkGray;
             this.panelSideMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelSideMenu.Controls.Add(this.btnLogout);
-            this.panelSideMenu.Controls.Add(this.btnseguridad);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
@@ -278,7 +278,7 @@ namespace MenuHCV
             this.btnseguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnseguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnseguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnseguridad.Location = new System.Drawing.Point(0, 456);
+            this.btnseguridad.Location = new System.Drawing.Point(3, 451);
             this.btnseguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnseguridad.Name = "btnseguridad";
             this.btnseguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -297,16 +297,15 @@ namespace MenuHCV
             this.btnPrototipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrototipo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrototipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnPrototipo.Location = new System.Drawing.Point(0, 408);
+            this.btnPrototipo.Location = new System.Drawing.Point(-1, 203);
             this.btnPrototipo.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrototipo.Name = "btnPrototipo";
             this.btnPrototipo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnPrototipo.Size = new System.Drawing.Size(303, 38);
+            this.btnPrototipo.Size = new System.Drawing.Size(315, 33);
             this.btnPrototipo.TabIndex = 19;
-            this.btnPrototipo.Text = "PROTOTIPO";
+            this.btnPrototipo.Text = "INVENTARIO";
             this.btnPrototipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrototipo.UseVisualStyleBackColor = false;
-            this.btnPrototipo.Click += new System.EventHandler(this.btnPrototipo_Click);
             // 
             // Menup
             // 

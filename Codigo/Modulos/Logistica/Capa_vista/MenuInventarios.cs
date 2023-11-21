@@ -72,7 +72,11 @@ namespace Vista_PrototipoMenu
         //Método que muestra el panel indicado
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelseguridad);
+            Reportes m = new Reportes();
+            m.MdiParent = this;
+            m.Show();
+            hideSubMenu();
+            //(panelseguridad);
         }
         //Método que muestra el formulario indicado
         //Método que muestra el formulario indicado
@@ -138,6 +142,11 @@ namespace Vista_PrototipoMenu
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

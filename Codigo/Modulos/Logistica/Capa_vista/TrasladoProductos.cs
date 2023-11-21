@@ -20,9 +20,9 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
 
-            txt_precioUnit.TextChanged += CalcularCostoTotal;
+            /*txt_precioUnit.TextChanged += CalcularCostoTotal;
             txt_cantidad.TextChanged += CalcularCostoTotal;
-            txt_fecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            txt_fecha.Text = DateTime.Now.ToString("yyyy-MM-dd");*/
         }
 
         private void navegador1_Load(object sender, EventArgs e)
@@ -30,17 +30,17 @@ namespace Vista_PrototipoMenu
             NavegadorVista.Navegador.idApp = "4005";  //código aplicación asignado al formulario
             navegador1.actual = this;
             navegador1.tabla = dgv_traslaProd;
-            TextBox[] Grupotextbox = { txt_idDoc, txt_destino, txt_nombreDoc, txt_fecha, txt_idProc, txt_nombreProc, txt_cantidad, txt_costoTotal, txt_precioUnit };
-            TextBox[] Idtextbox = { txt_idDoc, txt_destino };
+            TextBox[] Grupotextbox = { txt_codigo_nomina, txt_fecha_inicial_nomina, txt_fecha_final_nomina };
+            //TextBox[] Idtextbox = { txt_codigo_nomina, txt_fecha_inicial_nomina };
             navegador1.textbox = Grupotextbox;
-            navegador1.textboxi = Idtextbox;
+            //navegador1.textboxi = Idtextbox;
             navegador1.cargar(dgv_traslaProd, Grupotextbox, cn.getNombreBd());
         }
 
         private void CalcularCostoTotal(object sender, EventArgs e)
         {
             // Verificar si los valores en los cuadros de texto son numéricos
-            if (double.TryParse(txt_precioUnit.Text, out double precioUnit) &&
+            /*if (double.TryParse(txt_precioUnit.Text, out double precioUnit) &&
                 double.TryParse(txt_cantidad.Text, out double cantidad))
             {
                 // Realizar la multiplicación y mostrar el resultado en txt_costoTotal
@@ -51,7 +51,12 @@ namespace Vista_PrototipoMenu
             {
                 // Si los valores no son numéricos.
                 txt_costoTotal.Text = "En Espera...";
-            }
+            }*/
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
